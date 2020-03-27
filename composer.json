@@ -1,0 +1,17 @@
+{
+    "name": "sldevand/cron",
+    "authors": [
+        {
+            "name": "Sébastien Lorrain",
+            "email": "sldeveloperand@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Cron\\": "/"
+        }
+    },
+    "require": {
+        "dragonmantank/cron-expression": "^3.0"
+    }
+}
