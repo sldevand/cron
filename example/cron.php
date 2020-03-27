@@ -4,7 +4,7 @@ include __DIR__ . '/../vendor/autoload.php';
 
 $crontab = [
     'hello_world' => [
-        'expression' => '55 12 * * *',
+        'expression' => '* * * * *',
         'executor' => '\App\MyExecutor'
     ]
 ];
