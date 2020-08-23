@@ -30,8 +30,10 @@ class Launcher implements LauncherInterface
                 continue;
             }
 
+            $args = isset($cronJob['args']) ? $cronJob['args'] : null;
+
             /** @var ExecutorInterface $executor */
-            $executor = new $cronJob['executor']();
+            $executor = new $cronJob['executor']($args);
             $executor->execute();
         }
     }
